@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f3f6fb;
+}
+
+/* HEADER */
+.app-header {
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  color: white;
+  text-align: center;
+  padding: 25px 10px;
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+.app-header p {
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.container {
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+/* FORMULARIO */
+.form-card {
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  margin-bottom: 25px;
+}
+
+.form-card h2 {
+  margin-top: 0;
+}
+
+/* CAMPOS */
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+/* BOTÓN PRINCIPAL */
+#saveBtn {
+  width: 100%;
+  padding: 10px;
+  background: #4f46e5;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#saveBtn:hover {
+  background: #4338ca;
+}
+
+/* TÍTULO DE SECCIÓN */
+.section-title {
+  margin-top: 30px;
+}
+
+/* GRID DE NOTAS */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* TARJETA DE NOTA */
+.note-card {
+  background: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s;
+}
+
+.note-card:hover {
+  transform: translateY(-3px);
+}
+
+/* BOTONES DE ACCIÓN */
+.btn-group {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.edit-btn {
+  background: #facc15;
+  color: black;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-btn {
+  background: #ef4444;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
